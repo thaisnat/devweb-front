@@ -1,5 +1,5 @@
-import sendBotton from './botton-send';
-import textField from './text-field';
+import sendBotton from '../botton-send';
+import textField from '../text-field';
 
 const searchbox = props => {
     return(
