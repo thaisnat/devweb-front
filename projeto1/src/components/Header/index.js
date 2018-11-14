@@ -2,6 +2,6 @@ import React from "react";
 
 import './styles.css';
 
-const Header = () => <header id="main-header">Só Jesus salva !</header>
+const Header = () => <header className="App-header" id="main-header">só Jesus salva !</header>
 
 export default Header;

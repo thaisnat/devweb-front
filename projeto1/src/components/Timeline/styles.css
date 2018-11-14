@@ -1,11 +1,10 @@
 timeline #main-timeline{
-    width: 100%;
-    height: 60px;
-    background: #da552f;
-    font-size: 18px;
-    font-weight: bold;
-    color: #FFF;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background-color: #bd76f7;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: rgb(240, 14, 172);
 }
