@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import { withStyles, MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 import TextField from '@material-ui/core/TextField';
 import purple from '@material-ui/core/colors/purple';
-import green from '@material-ui/core/colors/green';
 
 const styles = theme => ({
   container: {
@@ -65,26 +64,37 @@ const styles = theme => ({
   },
 });
 
-const theme = createMuiTheme({
-  palette: {
-    primary: green,
-  },
-  typography: { useNextVariants: true },
-});
-
 function CustomizedInputs(props) {
   const { classes } = props;
 
   return (
     <div className={classes.container}>
-      <MuiThemeProvider theme={theme}>
-        <TextField
-          className={classes.margin}
-          label="Search"
-          id="mui-theme-provider-standard-input"
-        />
-      </MuiThemeProvider>
-    </div>
+
+      <TextField
+        className={classes.margin}
+        InputLabelProps={{
+          classes: {
+            root: classes.cssLabel,
+            focused: classes.cssFocused,
+          },
+        }}
+        InputProps={{
+          classes: {
+            root: classes.cssOutlinedInput,
+            focused: classes.cssFocused,
+            notchedOutline: classes.notchedOutline,
+          },
+        }}
+        label="New Post"
+        variant="outlined"
+        id="custom-css-outlined-input"
+      />
+      <input
+        className="submit-btn"
+        type="submit"
+        value="Adicionar"
+      />
+    </div >
   );
 }
 

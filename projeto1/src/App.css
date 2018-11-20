@@ -13,6 +13,23 @@
   color: rgb(240, 14, 172);
 }
 
+.App-search {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.App-timeline{
+  background-color: #bd76f7;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: rgb(240, 14, 172);
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
