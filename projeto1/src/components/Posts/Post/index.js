@@ -1,30 +1,32 @@
-import React, { Component } from "react";
-import PropTypes from "prop-types";
+import React, { Component } from 'react';
+import './styles.css';
+import { Row, Col } from 'reactstrap';
+
 
 class Post extends Component {
 
-    render(){
-        const { onPostClick, post} = this.props;
+    render() {
         return (
-        <li className="post-timeline">
-            <label className="post_label">
-                <input
-                    className="post_checkbox"
-                    type="checkbox"
-                    checked={post.done}
-                    onChange={() => onPostClick(post)}
-                />
-                {post.text}
-            </label>
-         </li>
-
+            <div className="Post">
+                <Row>
+                    <Col xs="auto">
+                        <div className="UserPictureMedium">
+                        </div>
+                    </Col>
+                    <Col xs="10" style={{ marginLeft: -15 + "px", marginTop: 10 + "px" }}>
+                        <div>
+                            Minha duvida !
+            </div>
+                    </Col>
+                </Row>
+                <hr />
+                <div className="Post-Content">
+                    <p>Se o mundo existe, Graças a Deus, por que ele existe ?</p>
+                </div>
+                <hr />
+            </div>
         );
     }
 }
-
-Post.prototypes = {
-    onPostClick: PropTypes.func.isRequired,
-    post: PropTypes.object.isRequired
-};
 
 export default Post;
