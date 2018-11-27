@@ -1,0 +1,41 @@
+.App {
+  text-align: center;
+  background-color: white;
+}
+.App-timeline {
+    margin-left: 37%;
+    margin-right: 37%;
+}
+
+.App-logo {
+  margin-right: 15%;
+  width: 75%;
+  margin-top: 7%;
+}
+
+.App-newPost {
+  margin-right: 15%;
+  width: 75%;
+  margin-top: 7%;
+}
+
+.App-listPost {
+  margin-right: 15%;
+  width: 75%;
+  margin-top: 7%;
+  text-align: center;
+  background-color: white;
+  max-width: 360;
+  position: 'relative';
+  overflow: 'auto';
+  max-height: 300;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
