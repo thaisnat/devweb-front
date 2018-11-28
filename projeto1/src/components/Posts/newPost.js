@@ -27,11 +27,11 @@ class NewPost extends Component {
     const { text } = this.state;
     return (
       <form className="form" onSubmit={this.handleSubmit}>
-        <div className="App-newPost" htmlFor="text">
+        <div className="App-new" htmlFor="text">
           <MuiThemeProvider>
-            Qual é a sua duvida ?
+            <h1>Qual é a sua duvida ?</h1>
             <TextField
-              label="New Post"
+              label="Pergunte algo... "
               variant="outlined"
               id="text"
               className="App-text"

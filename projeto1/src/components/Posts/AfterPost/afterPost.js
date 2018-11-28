@@ -7,11 +7,7 @@ class AfterPost extends Component {
     super(props);
     this.state = {
       answers: [
-        {
-          id: 0,
-          text: "",
-          done: false
-        }
+        
       ]
     }
   }
@@ -53,7 +49,7 @@ class AfterPost extends Component {
   render() {
     const { answers } = this.state;
     return (
-      <div className="App-afterPost">
+      <div className="App-timeline">
         <NewAnswer onSubmit={this.newAnswerr} />
         <ListAnswer
           answers={answers}

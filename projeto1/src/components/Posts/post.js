@@ -12,7 +12,7 @@ class Post extends Component {
             <div className="Post">
                 <Row>
                     <Col xs="auto">
-                        <div className="UserPictureMedium">
+                        <div className="Post-Titulo">
                         </div>
                     </Col>
                     <Col xs="10" style={{ marginLeft: -15 + "px", marginTop: 10 + "px" }}>

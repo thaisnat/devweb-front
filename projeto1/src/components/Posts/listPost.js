@@ -5,9 +5,9 @@ import Post from './post';
 
 const ListPost = props => {
   return (
-    <List className="App-listPost">
+    <List className="App-list">
       {props.posts.map(post => (
-        <ul className="App-listPost">
+        <ul className="App-list">
           <Post
             post={post}
             key={post.id}

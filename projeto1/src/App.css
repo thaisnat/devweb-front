@@ -3,34 +3,43 @@
   background-color: white;
 }
 .App-timeline {
-    margin-left: 37%;
-    margin-right: 37%;
+    margin-left: 30%;
+    margin-right: 30%;
     margin-top: 4%;
 }
 .App-logo {
   margin-right: 15%;
-  width: 75%;
+  width: 55%;
   margin-top: 3%;
   margin-bottom: 10%;
 }
 
-.App-listPost {
+.App-list {
+  margin-left: 15%;
   margin-right: 15%;
-  width: 95%;
-  margin-top: 10%;
+  margin-top: 4%;
+  width: 55%;
   text-align: center;
   background-color: white;
   color: white;
   max-width: 360;
-  position: 'relative';
   overflow: 'auto';
   max-height: 300;
+  font-size: 20%;
 }
-.App-button {
+.App-new {
+  margin-left: 15%;
   margin-right: 15%;
-  width: 75%;
-  margin-top: 50%;
-  max-width: 300;
+  margin-top: 4%;
+  margin-bottom: 4%;
+  width: 55%;
+  text-align: center;
+  background-color: white;
+  color: black;
+  max-width: 360;
+  overflow: 'auto';
+  max-height: 300;
+  font-size: 120%;
 }
 
 .App-text {
@@ -41,6 +50,13 @@
   padding: 3px;
   transition: box-shadow 200ms ease;
   will-change: auto;
+}
+
+.App-button {
+  margin-right: 15%;
+  width: 75%;
+  margin-top: 50%;
+  max-width: 300;
 }
 
 .App-text:focus {

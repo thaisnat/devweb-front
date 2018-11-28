@@ -23,14 +23,16 @@ class NewAnswer extends Component {
     this.props.onSubmit(this.state.text);
     this.setState({ text: "" });
   };
+
   render() {
     const { text } = this.state;
     return (
       <form className="form" onSubmit={this.handleSubmit}>
-        <div className="App-newAnswer" htmlFor="text">
+        <div className="App-new" htmlFor="text">
           <MuiThemeProvider>
+            <h1>eita</h1>
             <TextField
-              label="New Answer"
+              label="Responda algo... "
               variant="outlined"
               id="text"
               className="App-text"

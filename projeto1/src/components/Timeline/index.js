@@ -8,11 +8,7 @@ class Timeline extends Component {
     super(props);
     this.state = {
       posts: [
-        {
-          id: 0,
-          text: "",
-          done: false
-        }
+       
       ]
     }
   }

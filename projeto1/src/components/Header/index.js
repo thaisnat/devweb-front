@@ -92,7 +92,7 @@ function SearchAppBar(props) {
               </div>
               <MuiThemeProvider>
                 <InputBase
-                  placeholder="Pesquise aqui ! "
+                  placeholder="Pesquise algo... "
                   classes={{
                     root: classes.inputRoot,
                     input: classes.inputInput,

@@ -5,9 +5,9 @@ import Answer from './answer';
 
 const ListAnswer = props => {
   return (
-    <List className="App-listAnswer">
+    <List className="App-list">
       {props.answers.map(answer => (
-        <ul className="App-listAnswer">
+        <ul className="App-list">
           <Answer
             answer={answer}
             key={answer.id}
