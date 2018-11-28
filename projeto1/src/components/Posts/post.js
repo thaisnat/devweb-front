@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
-import './styles.css';
 import { Row, Col } from 'reactstrap';
-
+import PropTypes from "prop-types";
+import './post.css';
+import AfterPost from './AfterPost/afterPost';
 
 class Post extends Component {
 
     render() {
+        const { post } = this.props;
         return (
             <div className="Post">
                 <Row>
@@ -14,19 +16,17 @@ class Post extends Component {
                         </div>
                     </Col>
                     <Col xs="10" style={{ marginLeft: -15 + "px", marginTop: 10 + "px" }}>
-                        <div>
-                            Minha duvida !
-            </div>
                     </Col>
+                    {post.text}
                 </Row>
-                <hr />
-                <div className="Post-Content">
-                    <p>Se o mundo existe, Graças a Deus, por que ele existe ?</p>
-                </div>
-                <hr />
+                <AfterPost></AfterPost>
             </div>
         );
     }
 }
 
+Post.PropTypes = {
+    onPostClick: PropTypes.func.isRequired,
+    post: PropTypes.object.isRequired
+};
 export default Post;

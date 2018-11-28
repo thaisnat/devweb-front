@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import './styles.css';
 import { Row, Col } from 'reactstrap';
-
+import PropTypes from "prop-types";
+import './answer.css';
 
 class Answer extends Component {
-
   render() {
+    const { answer } = this.props;
     return (
       <div className="Answer">
         <Row>
@@ -13,15 +13,18 @@ class Answer extends Component {
             <div className="Answer-Titulo">
             </div>
           </Col>
+          <Col xs="10" style={{ marginLeft: -15 + "px", marginTop: 10 + "px" }}>
+          </Col>
+          {answer.text}
         </Row>
-        <hr />
-        <div className="Answer-Content">
-          <p>Por que graças a Deus, nós fizemos o mundo.</p>
-        </div>
-        <hr />
       </div>
     );
   }
 }
+
+Answer.PropTypes = {
+  onAnswerClick: PropTypes.func.isRequired,
+  answer: PropTypes.object.isRequired
+};
 
 export default Answer;
