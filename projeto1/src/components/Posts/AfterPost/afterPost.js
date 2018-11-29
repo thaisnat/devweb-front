@@ -7,7 +7,7 @@ class AfterPost extends Component {
     super(props);
     this.state = {
       answers: [
-        
+
       ]
     }
   }

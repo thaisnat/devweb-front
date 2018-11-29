@@ -15,7 +15,9 @@ class Answer extends Component {
           </Col>
           <Col xs="10" style={{ marginLeft: -15 + "px", marginTop: 10 + "px" }}>
           </Col>
-          {answer.text}
+          <div className="Answer-Content">
+            {answer.text}
+          </div>
         </Row>
       </div>
     );

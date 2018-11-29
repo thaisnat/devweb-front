@@ -42,8 +42,6 @@ class NewPost extends Component {
           </MuiThemeProvider>
         </div>
       </form>
-
-
     );
   }
 }

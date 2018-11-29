@@ -30,7 +30,6 @@ class NewAnswer extends Component {
       <form className="form" onSubmit={this.handleSubmit}>
         <div className="App-new" htmlFor="text">
           <MuiThemeProvider>
-            <h1>eita</h1>
             <TextField
               label="Responda algo... "
               variant="outlined"
@@ -43,8 +42,6 @@ class NewAnswer extends Component {
           </MuiThemeProvider>
         </div>
       </form>
-
-
     );
   }
 }
