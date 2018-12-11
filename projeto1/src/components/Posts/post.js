@@ -5,7 +5,6 @@ import './post.css';
 import AfterPost from './AfterPost/afterPost';
 
 class Post extends Component {
-
     render() {
         const { post } = this.props;
         return (
@@ -17,7 +16,9 @@ class Post extends Component {
                     </Col>
                     <Col xs="10" style={{ marginLeft: -15 + "px", marginTop: 10 + "px" }}>
                     </Col>
-                    {post.text}
+                    <div className="Post-Content">
+                        {post.text}
+                    </div>
                 </Row>
                 <AfterPost></AfterPost>
             </div>
