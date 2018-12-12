@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Row, Col } from 'reactstrap';
+import User from '../../User/user';
 import PropTypes from "prop-types";
 import './answer.css';
 
@@ -10,6 +11,9 @@ class Answer extends Component {
       <div className="Answer">
         <Row>
           <Col xs="auto">
+            <div
+              className="UserSmall"><User />
+            </div>
             <div className="Answer-Titulo">
             </div>
           </Col>
