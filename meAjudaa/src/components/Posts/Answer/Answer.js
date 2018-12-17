@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Row, Col } from 'reactstrap';
-import User from '../../User/user';
+import User from '../../User/User';
 import PropTypes from "prop-types";
 import './answer.css';
 

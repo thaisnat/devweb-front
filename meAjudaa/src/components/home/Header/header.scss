@@ -1,0 +1,23 @@
+.ui.secondary.pointing.menu.headerMenu {
+  background: white;
+}
+
+.ui.secondary.pointing.menu .item .itemMenu {
+  padding-bottom: 20px !important;
+}
+
+.userLoggedNavbar {
+  display: flex;
+}
+
+.userNotLoggedNavbar {
+  display: contents;
+}
+
+.ui.form .fields{
+  margin: 0;
+}
+
+input:focus {
+  border-color: rgba(224, 57, 151, 0.37) !important;
+}

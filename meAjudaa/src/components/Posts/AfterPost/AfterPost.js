@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import NewAnswer from '../Answer/newAnswer';
-import ListAnswer from '../Answer/listAnswer';
+import NewAnswer from '../Answer/NewAnswer';
+import ListAnswer from '../Answer/ListAnswer';
 
 class AfterPost extends Component {
   constructor(props) {

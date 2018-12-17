@@ -1,14 +1,12 @@
 import React from 'react';
-import Header from "./components/Header";
-import Timeline from './components/Timeline';
+import Router from './routes/Router';
 import './App.css';
 
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      <Timeline />
+      <Router />
     </div>
   );
 }

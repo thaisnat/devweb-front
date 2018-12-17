@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import List from '@material-ui/core/List';
-import Post from './post';
+import Post from './Post';
 
 const ListPost = props => {
   return (

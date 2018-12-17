@@ -1,0 +1,20 @@
+.ui.modal .actions>.button, .saveNewUser {
+  margin-bottom: 20px;
+}
+
+.characterLabel {
+  float: right;
+  font-size: .92857143em;
+  margin-top: -10px;
+}
+
+.characterLabelComplete{
+  float: right;
+  font-size: .92857143em;
+  color: #e03997;
+  margin-top: -5px;
+}
+
+label:after {
+  color: #e03997 !important;
+}
