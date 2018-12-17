@@ -1,5 +1,6 @@
-**Frontend da aplicação
-# O Me Ajudaaa;
+*Frontend da aplicação
+
+# Me Ajudaaa;
 Sistema de Monitoria online é uma rede social voltada para o auxilio nos estudos. Nele, os estudantes poderão tirar suas dúvidas durante todo o dia, facilitando assim o seu desempenho acadêmico.
 
 ## Para executar a aplicação
