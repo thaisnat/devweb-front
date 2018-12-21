@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 
 import { Container, Loader } from 'semantic-ui-react'
 
-import Header from './Header/Header';
 import Timeline from './Timeline/Timeline';
 import { Api } from '../../services/Api';
+import Wait from './Wait';
 class Home extends Component {
   constructor(props) {
     super(props);
@@ -29,20 +29,25 @@ class Home extends Component {
       this.getLoggedUser();
     }
 
-    if (this.state.isUserLoaded) {
-      return (
-        <div>
-          <Header user={this.state.user} />
-          <Container>
-            <Timeline user={this.state.user} />
-          </Container>
-        </div>
-      );
+    if (this.props.userLogged) {
+      if (this.state.isUserLoaded) {
+        return (
+          <div>
+            <Container>
+              <Timeline user={this.state.user} />
+            </Container>
+          </div>
+        );
+      } else {
+        return (
+          <div className='loading'>
+            <Loader active>Loading ...</Loader>
+          </div>
+        );
+      }
     } else {
       return (
-        <div className='loading'>
-          <Loader active>Loading ...</Loader>
-        </div>
+        <Wait />
       );
     }
   }

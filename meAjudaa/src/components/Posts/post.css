@@ -5,8 +5,8 @@
   font-size: 15px;
   margin-bottom: 4px;
   margin-top: 2px;
-  color: black;
-  background-color: white;
+  color: white;
+  background-color:black;
 }
 
 .Post-Content {
@@ -15,7 +15,7 @@
 }
 
 .Post-Titulo {
-  color: black;
+  color: white;
   font-size: 10px;
   text-align: center;
 }

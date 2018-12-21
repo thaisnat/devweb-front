@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  background-color: white;
+  background-color: black;
 }
 .App-timeline {
     margin-left: 27%;
@@ -19,8 +19,8 @@
   margin-top: 2%;
   width: 123%;
   text-align: center;
-  background-color: white;
-  color: black;
+  background-color:black;
+  color: white;
   max-width: 360;
   overflow: 'auto';
   max-height: 300;
@@ -33,7 +33,7 @@
   margin-bottom: 4%;
   width: 55%;
   text-align: center;
-  background-color: white;
+  background-color:black;
   color: black;
   max-width: 360;
   overflow: 'auto';
@@ -42,7 +42,7 @@
 }
 
 .App-text {
-  border: 2px solid #c7c7c7;
+  border: 2px solid #FFFF;
   border-radius: 4px;
   margin-bottom: 4px;
   outline: none;

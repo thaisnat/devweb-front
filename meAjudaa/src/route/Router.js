@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import Timeline from '../components/home/Timeline/Timeline';
+import { BrowserRouter, Switch, Route } from "react-router-dom";
+
 import Header from '../components/home/Header/Header';
 import Home from '../components/home/Home';
 import Post from '../components/Posts/Post';
-import ListPostPage from '../components/home/ListPostPage';
+import ListPost from '../components/Posts/ListPost';
 
 import { Api } from '../services/Api';
 
@@ -12,9 +12,7 @@ class Router extends Component {
   constructor(props) {
     super(props);
 
-    this.state = {
-      userLogged: false, checked: false
-    };
+    this.state = { userLogged: false, checked: false };
 
     this.handleLogin = this.handleLogin.bind(this);
   }
@@ -52,11 +50,11 @@ class Router extends Component {
         <BrowserRouter>
           <div>
             {this.state.checked && <Header userLogged={this.state.userLogged} login={this.handleLogin} />}
-            <Timeline></Timeline>
+
             <Switch>
               {this.state.checked && <Route exact path='/' render={() => (<Home userLogged={this.state.userLogged} />)} />}
               <Route exact path="/post/:postId" component={Post} />
-              <Route exact path="/listPost/:listPostId" component={ListPostPage} />
+              <Route exact path="/listpost/:listpostId" component={ListPost} />
             </Switch>
           </div>
         </BrowserRouter>
@@ -64,4 +62,5 @@ class Router extends Component {
     );
   }
 }
+
 export default Router;

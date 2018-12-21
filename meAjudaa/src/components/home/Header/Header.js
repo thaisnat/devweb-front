@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
 
-import { Menu, Container, Image, Icon } from 'semantic-ui-react';
+import { Menu, Container, Icon } from 'semantic-ui-react';
 import { withRouter } from 'react-router';
 import { Link } from 'react-router-dom';
 
-import logo from '../../../midia/meajuda.jpg';
 import Login from '../Login';
 import { Api } from '../../../services/Api';
 
@@ -17,6 +16,8 @@ class Header extends Component {
     let location = "";
     if (props.location.pathname === "/") {
       location = "home";
+    } else if (props.location.pathname === "/posts") {
+      location = "posts";
     } else if (props.location.pathname === "/search") {
       location = "search";
     }
@@ -48,25 +49,27 @@ class Header extends Component {
     return (
       <Menu className='headerMenu' pointing secondary  >
         <Container>
-          <Menu.Item>
-            <Image src={logo} size='small' as={Link} to={'/'} />
-          </Menu.Item>
 
           {this.props.userLogged && <div className='userLoggedNavbar'>
-            <Menu.Item name='home' color='pink' active={activeItem === 'home'} onClick={this.handleItemClick}
+            <Menu.Item name='home' color='white' active={activeItem === 'home'} onClick={this.handleItemClick}
               style={{ paddingBottom: 20 + 'px' }} as={Link} to={'/'} >
-              <Icon name='home' /> Me ajudaaaaaa !!!
+              <Icon name='home' /> Me Ajudaa !!
             </Menu.Item>
 
-            <Menu.Item name='explore' color='pink' active={activeItem === 'explore'} onClick={this.handleItemClick}
+            <Menu.Item name='posts' color='white' active={activeItem === 'posts'} onClick={this.handleItemClick}
               style={{ paddingBottom: 20 + 'px' }} as={Link} to={'/posts'}>
-              <Icon name='post' /> Search
+              <Icon name='posts' /> Posts
+            </Menu.Item>
+
+            <Menu.Item name='search' color='white' active={activeItem === 'search'} onClick={this.handleItemClick}
+              style={{ paddingBottom: 20 + 'px' }} as={Link} to={'/search'}>
+              <Icon name='search' /> Search
             </Menu.Item>
           </div>}
 
           {this.props.userLogged &&
             <Menu.Item name='sign-in' color='pink' position='right'
-              style={{ paddingBottom: 20 + 'px' }} onClick={this.logout}> Exit </Menu.Item>}
+              style={{ paddingBottom: 20 + 'px' }} onClick={this.logout}> Sair </Menu.Item>}
 
           {!this.props.userLogged && <div className='userNotLoggedNavbar'>
             <Login onLogged={this.handleLogin} />

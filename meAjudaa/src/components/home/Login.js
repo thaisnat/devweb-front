@@ -49,14 +49,14 @@ class Login extends Component {
 
   render() {
     return (
-      <Menu.Item position='center'>
+      <Menu.Item position='right'>
         <Form onSubmit={this.handleSubmit}>
           <Form.Group>
             <Form.Input placeholder='Username' name='username' size='mini'
               onChange={this.handleInputChange} value={this.state.username} />
             <Form.Input placeholder='Senha' type='password' name='password' size='mini'
               onChange={this.handleInputChange} value={this.state.password} />
-            <Form.Button content='Log in' type='submit' color='pink' size='mini' />
+            <Form.Button content='Log in' type='submit' color='white' size='mini' />
           </Form.Group>
         </Form>
         <NewUser />
