@@ -5,7 +5,7 @@ import { Row, Col } from 'reactstrap';
 
 import { IconButton } from "@material-ui/core";
 import DeleteIcon from "@material-ui/icons/Delete";
-import { Api } from "../../services/Api";
+import Api from "../../services/Api";
 import AfterPost from './AfterPost/AfterPost';
 
 class Post extends Component {

@@ -4,7 +4,7 @@ import { Menu, Form } from 'semantic-ui-react';
 import { withRouter } from 'react-router';
 
 import NewUser from '../User/NewUser';
-import { Api } from '../../services/Api';
+import Api from '../../services/Api';
 
 
 class Login extends Component {

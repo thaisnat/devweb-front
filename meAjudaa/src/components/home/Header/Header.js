@@ -5,7 +5,7 @@ import { withRouter } from 'react-router';
 import { Link } from 'react-router-dom';
 
 import Login from '../Login';
-import { Api } from '../../../services/Api';
+import Api from '../../../services/Api';
 
 import './header.scss';
 

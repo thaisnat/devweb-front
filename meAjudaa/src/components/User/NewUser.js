@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import { Modal, Button, Form } from 'semantic-ui-react';
 
-import { Api } from '../../services/Api';
+import Api from '../../services/Api';
 
 import './newUser.scss';
 

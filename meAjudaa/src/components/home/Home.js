@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import { Container, Loader } from 'semantic-ui-react'
 
 import Timeline from './Timeline/Timeline';
-import { Api } from '../../services/Api';
+import Api from '../../services/Api';
 import Wait from './Wait';
 class Home extends Component {
   constructor(props) {
